@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* .abox p{color: red;} */
+        .abox > p {color: red;}
+        .abox > ul p {color: blue;}
+
+    </style>
+</head>
+<body>
+
+    <div class="abox">
+        <p>하위선택자</p>
+        <p>하위선택자</p>
+
+        <ul>
+            <li><p>하위선택자</p></li>
+            <li><p>하위선택자</p></li>
+
+        </ul>
+
+        <p>하위선택자</p>
+    </div>
+
+    <p>여기는?</p>
+
+    <hr>
+
+    <style>
+        .bbox input[type="password"]{color: red;}
+        .bbox input[name="aaa"]{color: green;}
+
+        li[class*="item"]{color: aqua;}
+    </style>
+
+    <div class="bbox">
+        아이디:<input type="tex" name="aaa">
+        이름:<input type="tex" name="bbb">
+        비밀번호: <input type="password" name="ccc">
+    </div>
+
+    <div>
+        <ul><li class="item-1">아이템</li></ul>
+        <ul><li class="item-2">아이템</li></ul>
+        <ul><li class="item-3">아이템</li></ul>
+        <ul><li class="item-4">아이템</li></ul>
+        <ul><li class="item-5">아이템</li></ul>
+    </div>
+
+    <hr>
+
+    <style>
+        .cbox .a:active {background-color: pink;}
+        .cbox .b:hover {background-color: green;}
+        .cbox input:focus {border: 1px solid green; outline: none;}
+    </style>
+    
+    <div class ="cbox">
+
+        <div class="a">액티브</div>
+
+        <div class="b">호버</div>
+
+        포커스<input type="text" name="aaa">
+
+
+    </div>
+    
+</body>
+</html>
