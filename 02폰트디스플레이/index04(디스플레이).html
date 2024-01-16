@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    /*
+    박스 관련속성 
+    width, height은 블럭에만 줄 수 있습니다.
+    */
+    .abox div{
+        display: inline; /*배치구도 인라인*/
+        width: 100px;
+    }
+    .bbox span,
+    .bbox strong,
+    .bbox b {
+        display: block; /*배치구도 블럭*/
+        /* height: 100px; */
+    }
+
+    .cbox {
+        display: none; /*안보이게*/
+    }
+
+    .dbox a{
+        display: inline-block; /*   인라인(가로) 배치를 하되, 블럭속성을 받게함 */
+        width: 100px;
+        height: 100px;
+
+        border: 1px solid #777;
+        line-height: 100px;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+    }
+</style>
+<body>
+    
+    <div class="abox">
+        <div>블럭</div>
+        <div>블럭</div>
+        <div>블럭</div>
+        <div>블럭</div>
+        <div>블럭</div>
+    </div>
+
+    <div class="bbox">
+        <span>인라인</span>
+        <strong>인라인</strong>
+        <b>인라인</b>
+    </div>
+
+    <div class="cbox">
+        디스플레이 논
+    </div>
+
+    <div class="dbox">
+        <a href="#">인라인</a>    
+        <a href="#">인라인</a>    
+        <a href="#">인라인</a>    
+    </div>
+    
+</body>
+</html>
