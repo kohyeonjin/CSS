@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .abox {
+            width: 500px;
+            margin: 0 auto;
+            border: 1px solid #777;
+            /*부모요소에 - 2st */
+            overflow: hidden; 
+        }
+
+        /*자식에 float을 적용하면 부모영역이 자식을 감싸지 못하는 문제가 생깁니다.*/
+        
+        /*부모요소에 - 1st*/
+        /* .abox::after{
+            content: ""; display: block; clear:both;
+        } */
+
+        .abox .item{
+            float: left;
+            border: 1px solid #777;
+            width: 25%;
+            box-sizing: border-box; /*패딩과 border는 너바에서 제외*/
+        }
+
+        .bbox {
+            border: 1px solid #777;
+            margin: 0 auto;
+            width: 500px;
+            overflow: hidden;
+        }
+
+        .bbox .left{
+            float: left;
+        }
+
+        .bbox .right{
+            float: right;
+        }
+        .bbox .left2 {
+            float: left;
+        }
+
+        .cbox {
+            width: 500px;
+            margin: 0 auto;
+            border: 1px solid #777;
+            overflow: hidden;
+        }
+
+        
+        * {padding: 0; margin: 0;}
+         .ul, li, dl, dd, ol {
+           list-style: none;
+        }
+        
+
+        .cbox li {
+            float: left;
+            border: 1px solid #777;
+            box-sizing: border-box;
+            width: 20%;
+            text-align: center;
+        }
+
+        .cbox li a{
+            text-decoration: none;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div class="abox">
+        <div class="item">상자</div>
+        <div class="item">상자2</div>
+        <div class="item">상자3</div>
+        <div class="item">상자4</div>
+    </div>
+    
+    <br>
+
+    <div class="bbox">
+        <div class="left">왼쪽</div>
+        <div class="right">오른쪽</div>
+        <div class="left2">왼쪽2</div>
+
+        <div style="clear: both;">더 이상 플롯의 영향을 받지 않도록 함</div>
+
+    </div>
+
+    <hr>
+
+    <ul class="cbox">
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+    </ul>
+    
+</body>
+</html>

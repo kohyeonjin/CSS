@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+        .ul, li, dl, dd, ol {
+            list-style: none;
+         }
+        
+         .b {
+           background-color: black;
+           text-align: center;
+           margin:  0px;
+         }
+
+         .b > li {
+            display: inline-block;
+        }
+
+        .b > li > a{
+            display: block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            box-sizing: border-box;
+           
+
+        }
+
+        .b > li > a:hover{
+           border-bottom: 3px solid #fff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 0px 0px 30px;
+
+        }
+
+        
+        .bbox {
+            width: 1000px;
+            border: 1px solid #777;
+            padding: 30px;
+            margin: 0px;
+           
+        }
+
+        .box {
+            width: 1000px;
+            margin: 0 auto;
+
+        }
+
+        .abox {
+            margin: 0px;
+            font-weight: bold;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    
+    <header>
+    <nav class="nav">
+     <ul class="b">
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+   </ul>
+    </nav>
+    </header>
+
+    <img src="img/Untitled-1.jpg" alt="">
+
+    <div class ="box">
+    <p class="abox">오늘의 발견</p>
+    <p class="bbox">
+        본문내용...<br>
+        본문내용...<br>
+        본문내용...<br>
+        본문내용...<br>
+        본문내용...<br>
+        본문내용...<br>
+        본문내용...<br>
+        본문내용...<br>
+    </p>
+    </div>
+
+</body>
+</html>

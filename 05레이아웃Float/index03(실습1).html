@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            border: 1px solid #777;
+        }
+
+        .box .top{
+            height: 20%;
+        }
+        .box .middle{
+            height: 60%;
+            border: 1px solid #777;
+            padding: 20px 0px;
+            overflow: hidden;
+        }
+        .box .bottom{
+            height: 20%;
+        }
+
+        .box .left{
+            float: left;
+            border: 1px solid #777;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .box .right{
+            float: right;
+            border: 1px solid #777;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .box2{
+            width: 500px;
+            border: 1px solid #777;
+            overflow: hidden;
+            
+        }
+
+        .box2 .left2{
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            
+        }
+        .box2 .right2{
+            float: right;
+            width: 50%;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+
+        .content{
+            box-sizing: border-box;
+            padding-bottom: 50px;
+            overflow: hidden;
+        }
+
+        .price {
+           border: 1px solid #777;
+           
+        }
+        .buttons {
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .buttons button{
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .price{
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .price .prl{
+            float: left;
+
+        }
+        .price .prr {
+            float: right;
+        }
+
+        .box2 {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .pb {
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+
+        .buttons button {
+            padding: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h3>과제1</h3>
+    <div class="box">
+        <div class="top">탑</div>
+        <div class="middle">
+            <div class="left">중간 패딩 위아래 20px</div>
+            <div class="right">중간 패딩 위아래 20px</div>
+        </div>
+        <div class="bottom">바텀</div>
+    </div>
+
+   
+
+    <br>
+    <hr>
+
+    <h3>과제2</h3>
+
+    <div class="box2">
+        <div class="left2">왼쪽</div>
+        <div class="right2">
+            <div class="content">
+                <div class="cl">
+                    <div>제목:패딩바텀 50px</div>
+                    <div>내용:~~~</div>
+                </div>
+                <div class="cr">
+
+                </div>
+            </div>
+            <div class="price">
+                <div class="prl">가격</div>
+                <div class="prr">10000원</div>
+            </div>
+            <div class="buttons">
+                <button>장바구니</button>
+                <button>구매하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
