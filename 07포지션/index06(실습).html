@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{padding: 0; margin: 0;}
+        ul,li{list-style: none;}
+        
+        body {
+            background-image: url(images/bg.png);
+            width: 100%;
+
+        }
+        .logo{
+            text-align: center;
+        }
+
+        .menu {
+            background-color: black;
+            text-align: center;
+            width: 100%;
+        }
+
+       ul li {
+            display: inline-block;
+            
+        }
+        .menu ul a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 20px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .menu ul a:hover{
+            background-color: gray;
+        }
+
+        .items {
+            width: 100%;
+            overflow: hidden;
+            padding-left: 200px;
+            padding-right: 200px;
+            background-color: #fff;
+            width: 100%;
+        }
+
+        .items .item-box {
+            float: left;
+            width: 25%;
+            box-sizing: border-box;
+            margin: 30px 0px;
+        }
+
+        .icon {
+            background-color: #fff;
+            text-align: center;
+            width: 100%;
+        }
+
+        .icon li{
+            width: 100px;
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        .left {
+            float: left;
+            width: 20%;
+        }
+        .middle{
+            float: left;
+            width: 60%;
+        }
+        .right{
+            float: left;
+            width: 20%;
+        }
+
+        .left img{
+            display: block;
+        }
+
+        .right img{
+            display: block;
+        }
+
+        section{
+            width: 100%;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="back">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="">
+        </div>
+        <div class="menu">
+        <ul>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+        </ul>
+        </div>
+        <div class="items">
+            <div class="item-box"><img src="images/item01.png" alt=""><br><p>아이폰디스플레이</p></div>
+            <div class="item-box"><img src="images/item02.png" alt=""><br><p>iPod</p></div>
+            <div class="item-box"><img src="images/item03.png" alt=""><br><p>iPad</p></div>
+            <div class="item-box"><img src="images/item04.png" alt=""><br><p>iMac</p></div>        
+        </div>
+            <ul class="icon">
+                <li>아이콘</li>
+                <li>아이콘</li>
+                <li>아이콘</li>
+                <li>이거는 스티키</li>
+            </ul>
+        <section>
+        <div class="left"><img src="images/side01.png" alt="">
+        <img src="images/side02.png" alt=""></div>
+        <div class="middle"><img src="images/ipad.jpg" alt=""></div>
+        <div class="right">
+            <img src="images/side03.png" alt="">
+            <img src="images/side04.png" alt="">
+        </div>
+        </section>
+    </div>
+    
+</body>
+</html>

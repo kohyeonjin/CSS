@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       
+       .ul, li, dl, dd, ol {
+            list-style: none;
+         }
+       
+       .box{
+            width: 1080px;
+            overflow: hidden;
+        }
+
+        .abox{
+            width: 546px;
+            float: left;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .abox li{
+            width: 33.3333%;
+            height: 155px;
+            float: left;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+
+        .bbox {
+            width: 236px;
+            height: 310px;
+            float: left;
+            border: 1px solid #777;
+            margin-left: 8px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .cbox {
+            float: left;
+            border: 1px solid #777;
+            box-sizing: border-box;
+            overflow: hidden;
+            padding: 0px 10px 30px;
+            width: 100%;
+        }
+        .cbox .title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .cbox .left{
+            float: left;
+            width: 50%;
+            font-size: x-small;
+            white-space: nowrap;
+            color:#777;
+            margin-bottom: 10px;
+        }
+
+        .cbox .right{
+            float: right;
+            font-size: x-small;
+            color: #777;
+        }
+
+        .cbox button{
+            width: 100%;
+            margin-bottom: 30px;
+            border: none;
+            background-color: green;
+            color: #fff;
+            padding: 5px 10px;
+        }
+
+        .dbox{
+            border: 1px solid #777;
+            width: 280px;
+            margin-left: 8px;
+            float: left;
+            box-sizing: border-box;
+            height: 310px;
+        }
+
+        .dbox .empty {
+            float: left;    
+            height: 155px;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="ZZ">
+    최신앨범
+    <div class="box">
+        <div class="abox">
+            <ul>
+                <li>이미지</li>
+                <li>이미지</li>
+                <li>이미지</li>
+                <li>이미지</li>
+                <li>이미지</li>
+                <li>이미지</li>
+            </ul>
+        </div>
+        <div class="bbox">
+            <img src="" alt="이미지영역">
+        </div>
+        <div class="dbox">
+            <div class="cbox">
+                    <p class="title">너비 280px,  왼쪽마진 8px</p>
+                    <p class="left">멜론을 더 안전하게 이용하세요</p>
+                    <p class="right">회원가입</p>
+                    <button>로그인</button>
+            </div>
+            <div class="empty"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .wrap{
+            width: 500px;
+            margin: 0 auto;
+        }
+        .box {
+            height: 100px;
+            border: 1px solid #777;
+        }
+
+        .mybox {
+            background-color: aqua;
+            position: relative; /*내 위치 기준으로 z축으로 끌어올림*/
+            left: 20px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">박스1</div>
+        <div class="box mybox">박스1</div>
+        <div class="box">박스1</div>
+    </div>
+    
+</body>
+</html>

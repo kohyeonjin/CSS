@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 600px;
+            border: 1px solid #777;
+            padding: 10px;
+            padding-left: 90px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .box img{
+            position: absolute;
+            width: 80px;
+            top: 10px;
+            left: 0px;
+        }
+
+        .content{
+            border: 1px solid #777;
+            height: 200px;
+            margin-bottom: 5px;
+            padding: 5px;
+
+        }
+
+        .right{
+            float: right;
+        }
+
+        .left .hi{
+            border: 1px solid #777;
+            width: 100px;
+            height: 15px;
+            float: left;
+        }
+
+        .box2{
+            width: 100%;
+            overflow: hidden;
+        }
+
+        input {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="box">
+        <img src="/03백그라운드/img/css3.png" alt="이미지">
+
+        <div class="content">
+            힌트: 이미지영역을 position absolute를 사용합니다.
+        </div>
+        <div class="box2">
+        <div class="right">
+            <button>등록하기</button>
+        </div>
+        <div class="left">
+            <input type="text">
+            <input type="text">
+        </div>
+    </div>
+        
+    </div>
+</body>
+</html>
