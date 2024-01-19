@@ -1,0 +1,112 @@
+*{padding: 0; margin: 0;}
+ul,li,olmdl {list-style: none;}
+
+body{
+    background-image: url(images/bg.png);
+}
+
+header .logo {
+    text-align: center;
+    margin: 10px 0;
+}
+
+header nav .gnb {
+    background-color: #000;
+    text-align: center;
+}
+
+header nav .gnb li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+header nav ul li a:hover {
+    background-color: gray;
+}
+
+header .top {
+    position: fixed;
+    top:30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: red;
+}
+
+.hello {
+    height: 1500px;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: -220px;
+ }
+
+ .left img{
+     display: block;
+ }
+ .right{
+    position: absolute;
+    top: 0;
+    right: -220px;
+ }
+
+ .right img {
+     display: block;
+ }
+
+ section{
+     margin: 0 auto;
+     width: 700px;
+     position: relative;
+ }
+
+ .slider {
+    background-color: #fff;
+ }
+
+ .slider ul{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+ }
+ .slider ul li {
+    float: left;
+    width: 25%;
+ }
+
+ .slider ul li span {
+    display: block;
+ }
+
+ .menu {
+    background-color: #fff;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+ }
+
+ .menu ul li {
+    display: inline-block;
+ }
+
+ .menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 0px 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+ }
