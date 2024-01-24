@@ -159,7 +159,6 @@
 
 .product .wrap .box {
     overflow: hidden;
-    margin-bottom: 30px;
 }
 
 .wrap .box .left {
@@ -186,11 +185,16 @@
    margin-bottom: -124px;
 }
 
-.color {
+.wrap .prod-hover {
     overflow: hidden;
+    margin-top: -30px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
-.color .left img {
-    width: 20%;
+
+.wrap .prod-hover:hover {
+    opacity: 1;
+}
+.wrap .prod-hover li {
     float: left;
-    box-sizing: border-box;
 }
